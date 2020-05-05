@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class BasicMine : MineBase
 {
-    // bottom
     public float fDetonationDamage;
 
     // Update is called once per frame

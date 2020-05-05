@@ -18,8 +18,7 @@ public class SmOneShotTurret : TurretTracking
         base.OnBecameInvisible();
         StopAllCoroutines();
     }
-
-    // bottom level
+    
     IEnumerator Fire()
     {
         //Create new laser from object pool

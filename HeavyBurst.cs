@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class HeavyBurst : HeavyMovement
 {
-    public GameObject gCannon0;//First cannon for laser firing
-    public GameObject gCannon1;//Second cannon for laser firing
-    public GameObject gCannon2;//Third cannon for laser firing
+    // Getting child objects for cannon placement
+    public GameObject gCannon0;
+    public GameObject gCannon1;
+    public GameObject gCannon2;
 
     private new void Start()
     {

@@ -32,12 +32,7 @@ public class TurretTracking : EnemiesBase
         Quaternion qQ = Quaternion.AngleAxis(fAngle, Vector3.forward);
         gCannonBase.transform.rotation = Quaternion.Slerp(gCannonBase.transform.rotation, qQ, Time.deltaTime * 2f);
     }
-
-    private new void OnTriggerEnter2D(Collider2D col)
-    {
-        base.OnTriggerEnter2D(col);
-    }
-
+    
     public new void OnBecameVisible()
     {
         base.OnBecameVisible();

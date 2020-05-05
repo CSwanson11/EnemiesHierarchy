@@ -11,26 +11,16 @@ public class HeavyMovement : EnemiesBase
     public new void Start()
     {
         base.Start();
-        bCanMove = false;//Start move begins at false
+        bCanMove = false;
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
-        //If heavy can move, move ship forward by speed
+        //If heavy can move, move ship forward by speed, which keeps ship at top of screen
         if (bCanMove)
         {
             transform.Translate(Vector3.up * fSpeed * Time.deltaTime, Space.World);
         }
     }
-
-    //public void OnTriggerEnter2DMid(Collider2D col)
-    //{
-    //    OnTriggerEnter2DBase(col);
-    //    //If heavy collides with stop barrier, set can move to true
-    //    if (col.name == "Stop")
-    //    {
-    //        bCanMove = true;
-    //    }
-    //}
 }

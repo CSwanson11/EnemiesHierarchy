@@ -5,8 +5,9 @@ using UnityEngine;
 public class KamikazeMovement : EnemiesBase
 {
     public float fSpeed;//Speed of movement
-    public bool bCanMove;//Tracks whether ship cna move or not
+    public bool bCanMove;//Tracks whether ship can move or not
 
+    // Using FixedUpdate() for physics actions
     void FixedUpdate()
     {
         if(bCanMove)
